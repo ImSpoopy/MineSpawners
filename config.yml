@@ -1,0 +1,21 @@
+harvesting:
+#Should a specific enchantment be required to mine a mob spawner?
+  enchantment-required: true
+#Enchantment ID required to mine spawners.
+  enchantment-id: 33
+#Should whitelist mining spawners to specific worlds?
+  enable-world-whitelist: false
+#Add world names to the list below to allow harvesting mob spawners in those worlds
+  whitelist:
+    - world
+    - world_nether
+    - world_the_end
+explosions:
+#Should we enable harvesting spawners through tnt explosions?
+  enable-harvesting: true
+#Should we require permission for spawners to drop from explosion caused by specific player?
+  player-permission-needed: false
+#Should we allow creeper explosions to harvest spawners?
+  enable-creepers: true
+#Should we disable harvesting spawners when the explosions source is in water.
+  disable-in-water-explosions: true

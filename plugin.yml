@@ -1,0 +1,36 @@
+name: MineSpawners
+author: Spoopy
+description: A simple plugin that allows you to mine mob spawners.
+version: 1.1
+main: mc.spoopy.minespawners.MineSpawners
+depend: [Vault]
+permissions:
+  minespawners.*:
+    default: op
+    children:
+      minespawners.mine.break: true
+      minespawners.mine.place: true
+      minespawners.mine.explode: true
+      minespawners.signs.use: true
+      minespawners.signs.create: true
+  minespawners.mine.*:
+    default: op
+    children:
+      minespawners.mine.break: true
+      minespawners.mine.place: true
+      minespawners.mine.explode: true
+  minespawners.signs.*:
+    default: op
+    children:
+      minespawners.signs.use: true
+      minespawners.signs.create: true
+  minespawners.mine.break:
+    default: op
+  minespawners.mine.place:
+    default: op
+  minespawners.mine.explode:
+    default: op
+  minespawners.signs.use:
+    default: op
+  minespawners.signs.create:
+    default: op
